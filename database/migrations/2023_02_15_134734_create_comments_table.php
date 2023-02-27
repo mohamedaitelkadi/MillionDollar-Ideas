@@ -15,8 +15,10 @@ return new class extends Migration
             $table->id();
             $table->string('comment');
             $table->bigInteger('id_post')->unsigned();
+            $table->bigInteger('id_user')->unsigned();
             $table->timestamps();
             $table->foreign('id_post')->references('id')->on('posts')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreign('id_user')->references('id')->on('users')->onDelete('cascade')->onUpdate('cascade');
         });
     }
 

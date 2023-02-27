@@ -1,0 +1,130 @@
+
+      body {
+        background-color: #000000;
+        margin-top: 20px;
+      }
+      @media (min-width: 2400px) {
+        .profile-page .profile-header .cover figure img {
+          margin-top: -55px;
+        }
+      }
+
+
+     
+
+      .profile-page
+        .profile-body
+        .right-wrapper
+        .latest-photos
+        > .row
+        > div
+        figure:hover {
+        -webkit-transform: scale(1.06);
+        transform: scale(1.06);
+      }
+
+      .profile-page
+        .profile-body
+        .right-wrapper
+        .latest-photos
+        > .row
+        > div
+        figure
+        img {
+        border-radius: 0.25rem;
+      }
+
+      .rtl .profile-page .profile-header .cover .cover-body .profile-name {
+        margin-left: 0;
+        margin-right: 17px;
+      }
+      .img-xs {
+        width: 37px;
+        height: 37px;
+      }
+      .rounded-circle {
+        border-radius: 50% !important;
+      }
+      img {
+        vertical-align: middle;
+        border-style: none;
+      }
+
+      .card-header:first-child {
+        border-radius: 0 0 0 0;
+      }
+      .card-header {
+        padding: 0.875rem 1.5rem;
+        margin-bottom: 0;
+      }
+
+      .card-footer:last-child {
+        border-radius: 0 0 0 0;
+      }
+      .card-footer {
+        padding: 0.875rem 1.5rem;
+        background-color: rgba(0, 0, 0, 0);
+      }
+
+      .grid-margin {
+        margin-bottom: 1rem;
+      }
+      
+
+      .card, .middle-card {
+        background-color: #212121;
+      }
+      .rounded {
+        border-radius: 0.25rem !important;
+      }
+      .card {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+        height: 100vh;
+        word-wrap: break-word;
+        background-clip: border-box;
+        border-radius: 0.25rem;
+      }
+      .postarea{
+        display: flex;
+        flex-direction: column;
+      }
+
+
+
+
+    .g-height-50 {
+        height: 50px;
+    }
+    
+    .g-width-50 {
+        width: 50px !important;
+    }
+    
+    @media (min-width: 0){
+        .g-pa-30 {
+            padding: 0.5rem !important;
+        }
+    }
+    
+    .g-bg-secondary {
+        background-color: #fafafa !important;
+    }
+    
+    .u-shadow-v18 {
+        box-shadow: 0 5px 10px -6px rgba(0, 0, 0, 0.15);
+    }
+    
+    .g-color-gray-dark-v4 {
+        color: #777 !important;
+    }
+    
+    .g-font-size-12 {
+        font-size: 0.85714rem !important;
+    }
+    
+    .media-comment {
+        margin-top:20px
+    }
