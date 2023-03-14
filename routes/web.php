@@ -27,10 +27,13 @@ use App\Http\Controllers\CommentController;
 Auth::routes();
 
 Route::get ("/",[PostController::class , 'accueil']);
+Route::get ("/comments",[CommentController::class , 'find_comments']);
+Route::get ("delete/{id}",[PostController::class , 'remove']);
 Route::get ("login",[AuthController::class , 'index'])->name('login');
 Route::post ("postlogin",[AuthController::class , 'login'])->name('postlogin');
 Route::post ("newpost",[PostController::class , 'store'])->name('newpost');
 Route::post ("newcomment",[PostController::class , 'addComment'])->name('newcomment');
+Route::post ("edit",[PostController::class , 'update'])->name('edit');
 Route::get ("signup",[AuthController::class , 'signup'])->name('register');
 Route::post ("postsignup",[AuthController::class , 'signupsave'])->name('postsignup');
 Route::get('signout', [AuthController::class, 'signOut'])->name('signout');
